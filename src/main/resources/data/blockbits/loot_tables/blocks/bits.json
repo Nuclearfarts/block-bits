@@ -1,0 +1,52 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "minecraft:copy_nbt",
+							"source": "block_entity",
+							"ops": [
+								{
+									"source": "Data",
+									"target": "BlockEntityTag.Data",
+									"op": "replace"
+								},
+								{
+									"source": "Shape",
+									"target": "BlockEntityTag.Shape",
+									"op": "replace"
+								},
+								{
+									"source": "Palette",
+									"target": "BlockEntityTag.Palette",
+									"op": "replace"
+								},
+								{
+									"source": "NonAir",
+									"target": "BlockEntityTag.NonAir",
+									"op": "replace"
+								},
+								{
+									"source": "Most",
+									"target": "BlockEntityTag.Most",
+									"op": "replace"
+								},
+								{
+									"source": "Light",
+									"target": "BlockEntityTag.Light",
+									"op": "replace"
+								}
+							]
+						}
+					],
+					"name": "blockbits:bits"
+				}
+			]
+		}
+	]
+}

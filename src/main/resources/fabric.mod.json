@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "blockbits",
+	"version": "${version}",
+	"name": "Block Bits",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"NuclearFarts"
+	],
+	"contact": {
+		"homepage": "https://github.com/nuclearfarts/blockbits",
+		"sources": "https://github.com/nuclearfarts/blockbits"
+	},
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.nuclearfarts.bits.BitMod"
+		],
+		"client": [
+			"io.github.nuclearfarts.bits.ClientInit"
+		]
+	},
+	"mixins": [
+		"blockbits.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.4.0",
+		"fabric": "*"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "io.github.nuclearfarts.bits.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+		"BlockCrackParticleMixin",
+		"ClientPlayerInteractionManagerMixin",
+		"WorldRendererMixin",
+		"EntityMixin",
+		"LivingEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
